@@ -14,5 +14,9 @@ public class Pedido {
     public double calcularDesconto() {
         return this.getValorTotal() * 0.1;
     }
-    
+
+    public double processarPedido (Cliente cliente){
+        this.calcularDesconto();
+        cliente.setPedido(this);
+    }
 }

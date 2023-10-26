@@ -5,8 +5,8 @@ public class Cliente {
     private String nome;
     private List<Pedido> pedidos;
 
-    public List<Pedido> getPedidos() {
-        return pedidos;
+    public void setPedido(Pedido pedido) {
+        this.pedidos.add(pedido);
     }
 
     public String getNome() {
@@ -15,10 +15,6 @@ public class Cliente {
 
     public void setNome(String nome) {
         this.nome = nome;
-    }
-
-    public void comprar(Pedido pedido) {
-        pedidos.add(pedido);
     }
 }
 
