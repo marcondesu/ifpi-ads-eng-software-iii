@@ -1,0 +1,14 @@
+1. Por que o uso do nome próprio Liskov?
+Porque o termo foi cunhado em 1988 por Barbara Liskov.
+
+2. Qual a principal imagem relacionada ao princípio e qual a explicação sobre ela?
+A imagem das formas geométricas Quadrado e Retângulo.
+A classe base (Retângulo) possui métodos separados setAltura e setLargura que alteram individualmente a altura e a largura. Porém, ao modificar a altura de um quadrado, a largura também deve ser ajustada. Essa situação viola o princípio de Liskov, pois a subclasse Quadrado não pode ser substituída sem modificar o comportamento esperado da classe base.
+
+3. Cite um exemplo onde a herança pode ser usada de forma conveniente, porém
+deixa uma impressão de que está sendo mal aplicada.
+Tendo em vista a classe FormaGeometrica, se usarmos herança com as classes Circulo e Quadrado temos a impressão de ampla abrangência, considerando que não há um método que possa ser utilizado em comum.
+
+4. Cite um exemplo onde a herança pode ser usada de forma conveniente, porém
+deixa futuras expansões comprometidas ou com problemas de design.
+Considerando o exemplo de um sistema de gerenciamento de funcionários, se houver comportamentos específicos para novos tipos de funcionários adicionados ao longo do tempo, eles podem não se encaixar facilmente na estrutura existente, sendo complicado fazer adições sem introduzir problemas inesperados.
